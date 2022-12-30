@@ -10,8 +10,8 @@ jobs:
       - name: Downloading ngrok
         run: |
 
-          Invoke-WebRequest https://raw.githubusercontent.com/tman10001/Windows2019RDP-AP/main/ngrok.exe -OutFile ngrok.exe
-          Invoke-WebRequest https://raw.githubusercontent.com/tman10001/Windows2019RDP-US/main/Files/nssm.exe -OutFile nssm.exe
+          Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -OutFile ngrok.exe
+          Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/start.bat -OutFile start.bat
       - name: Extracting ngrok Files
         run: Expand-Archive ngrok.zip
 
